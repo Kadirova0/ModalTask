@@ -1,0 +1,14 @@
+﻿@using Pustok.ViewModels.Category;
+@model AddViewModel
+
+<a asp-controller="Category" asp-action="Add"></a>
+<form class="cateForm">
+    <div class="form-group">
+        <label asp-for="Name">Employee Name:</label>
+        <input asp-for="Name" type="text" class="form-control" id="employeeName" placeholder="Enter cate name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <a asp-controller="Category" asp-action="List"></a>
+
+</form>
+
